@@ -1,2 +1,37 @@
-body{background-color:#c0c0c0;}
-#container{width:95%;margin:0 auto;background-color:red;height:90px;}
+body{margin:0px;padding:0px;background-color:rgb(247,247,247);}
+a{text-decoration:none;}
+a:link{color:#7e7e7e;}
+a:hover {color: red; }
+.linediv{height:1px;background-color:gray;clear:both;}
+
+/* top部分 */
+#top{height:30px;background-color:rgb(231,231,231);line-height:30px;}
+#topwrap{width:80%;margin:0 auto;}
+#topleft{float:left;}
+#topright{float:right;}
+#top li{float:left;list-style:outside none none;margin-left:10px; color:#7e7e7e;font-size:12px;font-family:Microsoft YaHei;}
+#top li a{font-size:12px;font-family:Microsoft YaHei;}
+
+/* head部分 */
+#head{height:120px;}
+#headwrap{width:100%;margin:0 auto;}
+#headwrap div{float:left;}
+#searchtext{height:30px;width:240px;background-color:rgb(234,234,234);text-align:center;}
+#logoimg{height:120px;}
+
+/* nav部分 */
+/* #navcon{height:42px;} */
+#navwrap{width:80%;margin:0 auto;line-height:30px;}
+
+#navwrap li{float:left;text-align:center;}
+#navwrap li:nth-child(even){width:6px;}
+#navwrap li:nth-child(odd){width:100px;}
+
+
+
+#foot{height:80px;background-color:orange;}
+#container{width:98%;margin:0 auto;height:90px;}
+#content{height:500px;background-color:black;}
+#content div{float:left;}
+#conleft{width:25%;height:500px;background-color:blue;}
+#concenter{width:50%;height:500px;background-color:white;}
