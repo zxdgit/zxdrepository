@@ -1,0 +1,99 @@
+@charset "utf-8";
+html{font-family: "STHeiti","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;}
+html,body,header,section,footer,div,ul,ol,li,img,a,span,em,del,legend,center,strong,var,fieldset,form,label,dl,dt,dd,cite,input,hr,time,mark,code,figcaption,figure,textarea,h1,h2,h3,h4,h5,h6,p{margin:0;border:0;padding:0;font-style:normal;color:rgb(50,50,50);font-size: 16px;}
+html,body {-webkit-touch-callout:none;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);-webkit-user-select:none;background-color: #fff;height: 100%;width:100%;}
+nav,article,aside,details,main,header,footer,section,fieldset,figcaption,figure{display: block;}
+img,a,button,em,del,strong,var,label,cite,small,time,mark,code,textarea{display:inline-block;}
+header,section,footer {position:relative;}
+ol,ul{list-style:none;}
+input,button,textarea {border:0;margin:0;padding:0;font-size:1em;line-height:1em;-webkit-appearance:none;background-color:rgba(0, 0, 0, 0);}
+span{display:inline-block;}
+a:active, a:hover {outline: 0;}
+a, a:visited{text-decoration:none;}
+table {border-collapse: collapse;border-spacing:0;}
+td,th {padding:0;}
+img{border:none}
+
+body{width: 100%; height: 100%; background-color: #FFF;}
+
+/*20150923 edit*/
+html{font-size:10px}
+@media screen and (min-width:321px) and (max-width:375px){html{font-size:11px}}
+@media screen and (min-width:376px) and (max-width:414px){html{font-size:12px}}
+@media screen and (min-width:415px) and (max-width:639px){html{font-size:15px}}
+@media screen and (min-width:640px) and (max-width:719px){html{font-size:20px}}
+@media screen and (min-width:720px) and (max-width:749px){html{font-size:22.5px}}
+@media screen and (min-width:750px) and (max-width:799px){html{font-size:23.5px}}
+@media screen and (min-width:800px){html{font-size:25px}}
+/*去掉ios系统中元素被触摸时产生的半透明灰色遮罩*/
+a,button,input,textarea{-webkit-tap-highlight-color: rgba(0,0,0,0;)}
+/*去掉部分android系统中元素被点击时产生的边框*/
+a,button,input,textarea{
+-webkit-tap-highlight-color: rgba(0,0,0,0;)
+-webkit-user-modify:read-write-plaintext-only; 
+}
+/*webkit表单元素的默认外观怎么重置
+.css{-webkit-appearance:none;}
+*/
+/*webkit表单输入框placeholder的颜色值能改变么
+input::-webkit-input-placeholder{color:#AAAAAA;}
+input:focus::-webkit-input-placeholder{color:#EEEEEE;}
+*/
+
+/* ============================================================
+   flex：定义布局为盒模型
+   flex-v：盒模型垂直布局
+   flex-1：子元素占据剩余的空间
+   flex-align-center：子元素垂直居中
+   flex-pack-center：子元素水平居中
+   flex-pack-justify：子元素两端对齐
+   兼容性：ios 4+、android 2.3+、winphone8+
+   ============================================================ */
+.flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}
+.flex-v{-webkit-box-orient:vertical;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}
+.flex-1{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;}
+.flex-align-center{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;}
+.flex-pack-center{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}
+.flex-pack-justify{-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}
+/*一行... */
+/*不能与盒模型一起用, 容器内再加一层容器来搞定*/
+.line-ellipsis{overflow: hidden;text-overflow: ellipsis;-o-text-overflow:ellipsis;white-space: nowrap;}
+.hidden{display: none!important;}
+.visible{display: block!important}
+.inlineVisible{display: inline-block!important}
+.fl{float: left;}
+.fr{float: right;}
+
+.clearfix { *zoom: 1; }
+.clearfix:before,
+.clearfix:after { display: table; content: ""; line-height: 0; }
+.clearfix:after { clear: both; }
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+input, button, select, textarea {
+    font-family:"STHeiti","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
