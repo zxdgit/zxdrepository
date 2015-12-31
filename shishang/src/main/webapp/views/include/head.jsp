@@ -21,11 +21,10 @@
          <div id="mytable" >
              <div id="table">
                  <div id="tableimg"></div>
-                 <div></div>
+                 <div style="margin-left:10px;"><a href="">我的餐桌</a></div>
              </div>
          </div>
    </div>
-     
 </div>
 </body>
 </html>
