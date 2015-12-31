@@ -17,6 +17,13 @@ public class ClientController {
 	
 	@RequestMapping("/test")
 	public String test(){
+		User u = new User();
+		u.setAddress("da");
+		u.setCreatetime(new Date());
+		u.setLoginname("dad");
+		u.setPassword("1111");
+		u.setTelephone("dad");
+		service.insert(u);
 		return "client/index";
 	}
 	
