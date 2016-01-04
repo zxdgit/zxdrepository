@@ -5,7 +5,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href="<%=request.getContextPath() %>/css/base.css" rel="stylesheet" type="text/css"/>
-<link href="<%=request.getContextPath() %>/css/index.css" rel="stylesheet" type="text/css"/>
+<link href="<%=request.getContextPath() %>/css/all.css" rel="stylesheet" type="text/css"/>
+<link href="<%=request.getContextPath() %>/css/top.css" rel="stylesheet" type="text/css"/>
+<link href="<%=request.getContextPath() %>/css/head.css" rel="stylesheet" type="text/css"/>
+<link href="<%=request.getContextPath() %>/css/nav.css" rel="stylesheet" type="text/css"/>
+<link href="<%=request.getContextPath() %>/css/foot.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="<%=request.getContextPath() %>/js/jquery-1.9.1.min.js"></script>
 
 </head>

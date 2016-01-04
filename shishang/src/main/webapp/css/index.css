@@ -1,30 +1,3 @@
-body{margin:0px;padding:0px;background-color:rgb(247,247,247);}
-a{text-decoration:none;}
-a:link{color:#7e7e7e;}
-a:hover {color: red; }
-.linediv{height:1px;background-color:gray;clear:both;}
-
-/* top部分 */
-#top{height:30px;background-color:rgb(231,231,231);line-height:30px;}
-#topwrap{width:80%;margin:0 auto;}
-#topleft{float:left;}
-#topright{float:right;}
-#top li{float:left;list-style:outside none none;margin-left:10px; color:#7e7e7e;font-size:12px;font-family:Microsoft YaHei;}
-#top li a{font-size:12px;font-family:Microsoft YaHei;}
-
-/* head部分 */
-#head{height:120px;}
-#headwrap{width:100%;margin:0 auto;}
-#headwrap div{float:left;}
-#logo{width:40%;}
-#search{width:40%;height:40px;margin-top:40px;}
-#searchtext{height:40px;width:360px;background-color:rgb(231,231,231);text-align:center;float:left;}
-#search img{ height:40px;width:60px;float:left;margin-left:2px;}
-#logoimg{height:120px;}
-.searchsubmit{ background:url(../images/search1.png); height:40px;width:50px;}
-#mytable{float:left;width:20%;height:40px;line-height:40px;margin-top:40px;}
-#table{width:150px;background-color:rgb(231,231,231);height:40px;}
-#tableimg{width:30px;height:30px;border-radius:30px;background-color:rgb(200,200,200);margin:5px;float:left;}
 
 
 
@@ -37,19 +10,8 @@ a:hover {color: red; }
 
 
 
-/* nav部分 */
-/* #navcon{height:42px;} */
-#navwrap{width:80%;margin:0 auto;line-height:30px;}
-
-#navwrap li{float:left;text-align:center;}
-#navwrap li:nth-child(even){width:6px;}
-#navwrap li:nth-child(odd){width:100px;}
 
 
 
-#foot{height:80px;background-color:orange;}
-#container{width:98%;margin:0 auto;height:90px;}
-#content{height:500px;background-color:pink;}
-#content div{float:left;}
-#conleft{width:25%;height:500px;background-color:blue;}
-#concenter{width:50%;height:500px;background-color:white;}
+
+
