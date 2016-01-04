@@ -1,5 +1,7 @@
 package cn.edu.tjpu.zxd.shishang.service.impl;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +20,8 @@ public class UserServiceImpl implements UserService {
 	public void insert(User user) {
 		
 		user.setPassword(MyMd5.MD5(user.getPassword()));
-          mapper.insert(user);
+		user.setCreatetime(new Date());
+        mapper.insert(user);
 	}
 
 }

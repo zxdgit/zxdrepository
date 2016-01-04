@@ -19,7 +19,7 @@
         店铺招牌菜
    </div>
    <div id="concenter">
-       <img src="${path}/images/food.jpg" alt="food" style="width:100%;height:100%;"/>
+       <img src="<%=request.getContextPath() %>/images/food.jpg" alt="food" style="width:100%;height:100%;"/>
    </div>
    <div id="conright">
       推荐品尝 ${ctx}

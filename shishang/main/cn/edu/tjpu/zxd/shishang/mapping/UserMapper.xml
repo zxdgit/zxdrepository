@@ -9,7 +9,7 @@
     <result column="realname" property="realname" jdbcType="VARCHAR" />
     <result column="address" property="address" jdbcType="VARCHAR" />
     <result column="telephone" property="telephone" jdbcType="VARCHAR" />
-    <result column="createtime" property="createtime" jdbcType="TIME" />
+    <result column="createtime" property="createtime" jdbcType="TIMESTAMP" />
     <result column="userimage" property="userimage" jdbcType="VARCHAR" />
     <result column="flag" property="flag" jdbcType="TINYINT" />
   </resultMap>
@@ -34,7 +34,7 @@
       flag)
     values (#{id,jdbcType=SMALLINT}, #{loginname,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
       #{status,jdbcType=TINYINT}, #{realname,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, 
-      #{telephone,jdbcType=VARCHAR}, #{createtime,jdbcType=TIME}, #{userimage,jdbcType=VARCHAR}, 
+      #{telephone,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP}, #{userimage,jdbcType=VARCHAR}, 
       #{flag,jdbcType=TINYINT})
   </insert>
   <insert id="insertSelective" parameterType="cn.edu.tjpu.zxd.shishang.model.User" >
@@ -94,7 +94,7 @@
         #{telephone,jdbcType=VARCHAR},
       </if>
       <if test="createtime != null" >
-        #{createtime,jdbcType=TIME},
+        #{createtime,jdbcType=TIMESTAMP},
       </if>
       <if test="userimage != null" >
         #{userimage,jdbcType=VARCHAR},
@@ -126,7 +126,7 @@
         telephone = #{telephone,jdbcType=VARCHAR},
       </if>
       <if test="createtime != null" >
-        createtime = #{createtime,jdbcType=TIME},
+        createtime = #{createtime,jdbcType=TIMESTAMP},
       </if>
       <if test="userimage != null" >
         userimage = #{userimage,jdbcType=VARCHAR},
@@ -145,7 +145,7 @@
       realname = #{realname,jdbcType=VARCHAR},
       address = #{address,jdbcType=VARCHAR},
       telephone = #{telephone,jdbcType=VARCHAR},
-      createtime = #{createtime,jdbcType=TIME},
+      createtime = #{createtime,jdbcType=TIMESTAMP},
       userimage = #{userimage,jdbcType=VARCHAR},
       flag = #{flag,jdbcType=TINYINT}
     where id = #{id,jdbcType=SMALLINT}
